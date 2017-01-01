@@ -1,12 +1,11 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(description)
+project(gazebo_bot)
 
 find_package(catkin REQUIRED)
 
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES description
+#  LIBRARIES gazebo_bot
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
-

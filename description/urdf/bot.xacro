@@ -4,9 +4,12 @@
 
 
 
-  <xacro:include filename="$(find description)/urdf/bot.gazebo" />
-  <xacro:include filename="$(find description)/urdf/materials.xacro" />
-  <xacro:include filename="$(find description)/urdf/macros.xacro" />
+  <xacro:include filename="$(find gazebo_bot)/description/urdf/bot.gazebo" />
+  <xacro:include filename="$(find gazebo_bot)/description/urdf/materials.xacro" />
+  <xacro:include filename="$(find gazebo_bot)/description/urdf/macros.xacro" />
+  <!-- Laser  -->
+  <xacro:include filename="$(find gazebo_bot)/description/sensors/laser/hokuyo.xacro"/>
+  <xacro:laser name="front_laser" parent="chassis" xyz="0.2 0 0.1" rpy="0 0 0" meshes="package://gazebo_bot/description/sensors/laser/meshes"/>
 
 
   <link name='chassis'>
